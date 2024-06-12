@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/skillbox
+    username: skillbox
+    password: skillbox
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create
+  liquibase:
+    change-log: db.changelog/db.changelog-master.xml
+    enabled: true
+    drop-first: false
